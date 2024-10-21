@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me || Learningrobo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7; /* Light background */
+            color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .about-container {
+            max-width: 2000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background: white; /* White background for the container */
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #412e2e;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        h1:hover {
+            color: #6616d0; /* Change color on hover */
+        }
+
+        .bio {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bio img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 25px;
+            border: 5px solid #332f2f;
+            transition: transform 0.3s; /* Smooth image transition */
+        }
+
+        .bio img:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .bio p {
+            font-size: 1.3em;
+            line-height: 1.6em;
+            margin: 15px 0;
+            padding: 0 10px; /* Padding for small screens */
+        }
+
+        .skills {
+            margin-bottom: 30px;
+            text-align: left; /* Align skills text to the left */
+        }
+
+        .skills h2 {
+            margin-bottom: 15px;
+        }
+
+        .skill {
+            margin: 15px 0;
+        }
+
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .progress {
+            background: #dddddd3b;
+            border-radius: 20px;
+            height: 10px;
+            overflow: hidden;
+            transition: background 0.3s; /* Smooth background transition */
+        }
+
+        .progress:hover {
+            background: #d0d0d0; /* Change background on hover */
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: #332f2f;
+            border-radius: 20px;
+            transition: width 0.5s;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .back-home {
+            background: #140c0c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+
+        .back-home:hover {
+            background: #6616d0;
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .bio img {
+                width: 120px;
+                height: 120px;
+            }
+
+            .bio p {
+                font-size: 1em;
+            }
+
+            .skills h2 {
+                font-size: 1.5em;
+            }
+
+            .skill-name span {
+                font-size: 0.9em;
+            }
+
+            .back-home {
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5em;
+            }
+
+            .bio img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .bio p {
+                font-size: 0.9em;
+            }
+
+            .skills h2 {
+                font-size: 1.2em;
+            }
+
+            .skill-name span {
+                font-size: 0.8em;
+            }
+
+            .back-home {
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <h1>About Me</h1>
+        <div class="bio">
+            <img src="https://as1.ftcdn.net/v2/jpg/01/12/99/80/1000_F_112998031_uS49e6PaR51JSPt66tBaDxlXg5yqavRK.jpg" alt="Profile Picture">
+            <p>Hello! I'm a passionate software developer who loves transforming ideas into functional applications. I enjoy solving complex problems and creating user-friendly solutions. Software development is not just my career; it's my passion!</p>
+        </div>
+
+        <div class="skills">
+            <h2>Skills</h2>
+            <div class="skill">
+                <div class="skill-name">
+                    <span>HTML</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <span>CSS</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <span>JavaScript</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <span>React</span>
+                    <span>70%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">
+                    <span>Node.js</span>
+                    <span>65%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+
+        <div class="button-container">
+            <a href="index.html"><button class="back-home">Back to Home</button></a>
+        </div>
+    </div>
+</body>
+</html>
