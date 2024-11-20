@@ -1,0 +1,154 @@
+body {
+    scroll-behavior: smooth;
+    font-family: glyphic, sans-serif;
+    background: url(https://i.pinimg.com/736x/30/1e/7d/301e7d53c3ab45cbc770c02124ba93f5.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Kalnia Glaze';
+    color:#fff;
+}
+.navbar {
+    background-color: transparent; /* Semi-transparent white background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    margin-left: 10px;
+    color: rgb(204, 211, 211) !important; /* Ensure proper contrast and styling */
+    font-weight: bold; /* Make the brand stand out */
+    font-size: 1.2rem; /* Adjust size for better readability */
+    padding: 8px 0;
+
+}
+
+.nav-item .nav-link {
+    color: rgb(219, 223, 223) !important; /* Harmonize with the border color */
+    width: auto; /* Allow width to adapt to content */
+    padding: 8px 20px; /* Balanced padding for better appearance */
+    border: 2px solid rgb(12, 90, 90); /* Uniform border */
+    border-radius: 50px; /* Rounded corners */
+    box-sizing: border-box; /* Prevent padding from affecting button size */
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.nav-item .nav-link:hover {
+    background-color: rgb(12, 90, 90); /* Fill button on hover */
+    color: white !important; /* Contrast text color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero h1, .hero p, .hero a {
+    z-index: 2;
+    position: relative;
+}
+
+.hero h1 {
+    margin-top: 130px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 50px;
+}
+
+.carousel-inner img {
+    height: 400px; /* Make the images take the full height of the container */
+    object-fit: fill; /* Ensure images are resized proportionally and cover the container */
+    border-radius: 30px;
+}
+
+.attraction h2 {
+    font-size: 45px;
+
+}
+
+.position-relative {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensure the image spans the full width of the column */
+    height: 400px; /* Fixed height for uniformity */
+    object-fit: cover; /* Crop the image to fit without distortion */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Overlay text */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Adjust as needed */
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 100vh;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 2.2rem;
+    }
+
+    .attraction h2 {
+        margin-top: 100px;
+    }
+
+    .hero::before {
+        height: 110vh;
+    }
+
+    .overlay {
+        width: 90%;
+        padding: 15px;
+        font-size: 20px;
+        font-family: 'Kalnia Glaze';
+    }
+
+    .overlay p {
+        font-size: 15px;
+    }
+
+    .carousel-inner img {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .carousel-inner img {
+        height: 50vh;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NORWAY</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#">Stunning Places</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#attractions">Attractions</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero and Carousel Section -->
+    <section id="home" class="container-fluid d-flex align-items-center hero">
+        <div class="row w-100">
+            <div class="col-md-6">
+                <div>
+                    <h1>N O R W A Y</h1>
+                    <p>Discover the beauty of Norway</p>
+                </div>
+            </div>
+            <div class="col-md-6 p-0">
+                <div id="attractionsCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://i.pinimg.com/control2/736x/c9/f6/f6/c9f6f6c3bd0860614930b131119cb4c4.jpg" class="d-block w-100" alt="Beautiful Landscapes">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/736x/45/5c/f8/455cf8f26355094eeed5c990c8faaea4.jpg" class="d-block w-100" alt="Adventure Activities">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://i.pinimg.com/736x/16/d7/ee/16d7eee7de3d39fa1bf36c0d8efb9f56.jpg" class="d-block w-100" alt="Rich History">
+                            <div class="carousel-caption d-none d-md-block">
+                        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+<section id="attractions" class="container mt-5 attraction">
+    <h2 class="text-center mb-4">Attractions</h2>
+    <div class="row">
+        <!-- Beautiful Landscapes -->
+        <div class="col-md-4 mb-4">
+            <div class="position-relative">
+                <img src="https://i.pinimg.com/736x/09/b0/6d/09b06de5d0f39f54ce3c737aa9117710.jpg" 
+                     alt="Beautiful Landscapes" 
+                     class="img-fluid rounded">
+                <div class="overlay text-center">
+                    <h3>Beautiful Landscapes</h3>
+                    <p>Explore our scenic landscapes and breathtaking views.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Adventure Activities -->
+        <div class="col-md-4 mb-4">
+            <div class="position-relative">
+                <img src="https://i.pinimg.com/736x/25/a3/4d/25a34d971bdda863e9ceec6f9891184c.jpg" 
+                     alt="Adventure Activities" 
+                     class="img-fluid rounded">
+                <div class="overlay text-center">
+                    <h3>Adventure Activities</h3>
+                    <p>Engage in thrilling activities like hiking, zip-lining, and more.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Norway Summer -->
+        <div class="col-md-4 mb-4">
+            <div class="position-relative">
+                <img src="https://i.pinimg.com/736x/1d/73/dd/1d73dd52fa9fd51700cfc41dd7f190db.jpg" 
+                     alt="Rich History" 
+                     class="img-fluid rounded">
+                <div class="overlay text-center">
+                    <h3>City</h3>
+                    <p>See the stunning landscapes and architecture of our city.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
