@@ -1,0 +1,55 @@
+body {
+    padding-top: 50px;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/18/88/0f/18880fa67fd73aab211edb30cbc19b73.gif"); 
+    background-size: cover;
+    background-attachment: center;
+    color: white; 
+}
+
+.dog-image {
+    margin-top: 16px;
+    max-width: 300px;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-left: auto;
+}
+.container h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 50px; 
+    color: #595bb8; 
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+    letter-spacing: 5px; 
+}
+#getDog.btn-primary {
+    background-color: #595bb8; 
+    border: none; 
+    color: white;
+    padding-top: 0 10px;
+    padding: 12px 25px;
+    font-size: 18px; 
+    border-radius: 20px;
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+#getDog.btn-primary:hover {
+    background-color: #0d0235; 
+}
+.form-group {
+    margin-bottom: 20px; /* Adds space below the select box */
+}
+#breedSelect {
+    width: 80%; /* Make the select box fill the container width */
+    padding: 12px 20px;
+    margin-left: auto; 
+    margin-right: auto;/* Add padding inside the select box */
+    font-size: 16px; /* Increase font size */
+    font-family: 'Arial', sans-serif; /* Custom font */
+    background-color: #6d9cd1; /* Light background color */
+    border: 2px solid #d3cdcd; /* Light border */
+    border-radius: 25px; /* Rounded corners */
+    color: #0e0d0d; /* Dark text color */
+    cursor: pointer; /* Pointer cursor when hovering over the select box */
+    transition: all 0.3s ease; /* Smooth transition for background and border */
+}
