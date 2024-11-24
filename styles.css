@@ -23,20 +23,20 @@ body {
 }
 
 .container {
-    height: 1000px;
+    height: 890px;
     display: flex;
     justify-content: start;
     flex-wrap: nowrap;
-    gap: 30px;
+    gap: 20px;
 }
 
 .card {
-    margin-top: auto;
+    margin-top: 20%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-    height: 50%;
-    width: 70px;
+    height: 40%;
+    width: 60px;
     border-radius: .75rem;
     background-size: cover;
     cursor: pointer;
@@ -156,9 +156,9 @@ button:active {
     }
 
     .card {
-        margin-top: 12%;
-        width: 100%;
-        max-width: 130%;
+        margin-top: 2%;
+        width: 80%;
+        max-width: 90%;
     }
 
     .card>.row {
