@@ -128,7 +128,7 @@ button {
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 1px;
     margin-bottom: 20px;
-    margin-left: 40px;
+    margin-left: 30px;
     align-self: center;
     z-index: 20;
     opacity: 1; /* Corrected opacity */
